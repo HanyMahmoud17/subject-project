@@ -1,0 +1,8 @@
+@use "./layout/global-roles";
+@use "./layout/vars" as *;
+
+body {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-weight: 400;
+  direction: rtl;
+}

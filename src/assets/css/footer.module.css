@@ -1,0 +1,330 @@
+
+.content {
+    width: 70%;
+    padding-right: 20px;
+  }
+  .items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    background: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  .img {
+    width: 30%;
+    padding: 0px;
+    margin: 0px;
+    /* opacity: 0.9; */
+  }
+  .imageOne {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  .textOne {
+    color: #586774;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+  .textTwo {
+    color: #2c3e50;
+    font-size: 13.6px;
+    padding-bottom: 10px;
+  }
+
+.containerOne {
+    width: 640px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto
+  }
+.cardContainer {
+    transition: transform 0.6s ease-in-out;
+
+  }
+  
+  .cardContainer:hover {
+    transform: scale(1.05);
+  }
+  .footerSection{
+    text-align: center;
+    color: #718096;
+    padding-top: 5px;
+    font-size: 14px;
+    width: 800px;
+    background-color: #f4f7f8;
+    padding: 30px 70px 20px 70px;
+    border-radius: 10px;
+  }
+
+  .gedoCard{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    text-align: center;
+    transition: transform 0.6s ease-in-out;
+  }
+  .gedoCard:hover {
+    transform: scale(1.04) translateY(-2px);
+    box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.2);
+  }
+  .socialImage {
+    font-size: 25px;
+    transition: transform 0.7s ease-in-out;
+    color: #1E3050;
+  }
+  
+  .socialImage:hover {
+    opacity: 0.7;
+    transform: scale(1.1) rotate(360deg);
+    color: #1E3050 !important;
+  }
+  
+  .textThree{
+    padding-bottom: 15px;
+  }
+  
+  /* .top_to_btm {
+    position: relative;
+  } */
+  
+  .icon_position {
+     position:fixed;
+    top: 550px;
+    left: 205px; 
+  }
+  
+ 
+.icon_style {
+  border-radius: 20%;
+  height: 60px;
+  padding: 10px;
+  width: 60px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.light_mode {
+  /* background-color: #a8a6a6; */
+  /* color: #152033; */
+  color: #1E3050;
+}
+
+.dark_mode {
+  /* background-color: #212121; */
+  color: #152033;
+}
+
+.fade_in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.fade_out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+.headertest{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: #3ba6dd;
+  border-radius: 9px;
+}
+
+.HLogo{
+  width: 220px;
+
+}
+  .textHTwo{
+    word-spacing: 1px;
+  }
+
+@keyframes shining {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.shiningBackground {
+  padding: 5px 10px 5px 10px;
+  font-size: 22px;
+  font-weight: bold;
+  background: linear-gradient(to left, white, rgba(255, 255, 255, 0.2));
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shining 2s infinite;
+}
+
+/* loading screen  */
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: #f2f2f2; */
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 220px;
+  /* height: 10%; */
+  /* animation: switchLogo 1s ease-in-out infinite; */
+}
+
+@keyframes switchLogo {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
+@media (max-width: 1024px) {
+  .icon_position {
+    top: 650px;
+    left: 40px; 
+  }
+}
+
+  @media (max-width: 899px) {
+    .icon_position {
+      top: 550px;
+      left: 205px; 
+    }
+    .containerOne {
+      width: 500px;
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+    .imageOne {
+      width: 160px;
+      height: 160px;
+    }
+  
+  }
+  @media (max-width: 768px) {
+   .imgOne{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+        /* text-align: center; */
+        padding-top: 10px;
+    }
+    .gedoCard img{
+        width: 100px !important;
+        height: 30px !important;
+    }
+    .footerSection {
+        width: 500px !important;
+        padding: 10px 30px 10px 30px;
+    }
+    .icon_position {
+      top: 470px;
+      left: 70px; 
+    }
+  }
+  @media (max-width: 700px) {
+    .icon_position {
+      top: 470px;
+      left: 40px; 
+    }
+  
+  }
+  @media (max-width: 640px) {
+    .icon_position {
+      top: 470px;
+      left: 70px; 
+    }
+  }
+
+  @media (max-width: 600px) {
+    .icon_position {
+      top: 470px;
+      left: 70px; 
+    }
+  
+  }
+  @media (max-width: 599px) {
+    .containerOne {
+        width: 350px;
+      }
+      .content{
+        width: 550%;
+        padding-right: 10px !important;
+        padding-left: 2px !important;
+        /* text-align: center; */
+        /* padding-top: 5px !important; */
+    }
+    .gedoCard{
+        width: 100% !important;
+    }
+    .footerSection {
+        width: 350px !important;
+    }
+    .img {
+      width: 40%;
+      padding: 0px;
+      margin: 0px;
+      /* opacity: 0.9; */
+    }
+    
+    .imageOne {
+      width: 140px;
+    }
+
+    .textOne{
+      font-size: 15px !important;
+      padding-right: 8px !important;
+    }
+
+    .textTwo{
+      font-size: 12px !important;
+      padding-right: 8px !important;
+      width: 220px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .icon_position {
+      top: 470px;
+      left: 70px; 
+    }
+  }
+
+  @media (max-width: 480px) {
+    .icon_position {
+      top: 640px;
+      left: 50px; 
+    }
+  }
+
+  @media (max-width: 400px) {
+    .icon_position {
+      top: 640px;
+      left: 35px; 
+    }
+  }
+
+  @media (max-width: 380px) {
+    .icon_position {
+      top: 640px;
+      left: 34px; 
+    }
+  }
+

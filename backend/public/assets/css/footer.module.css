@@ -1,0 +1,164 @@
+
+.content {
+    width: 70%;
+    padding-right: 20px;
+  }
+  .items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    background: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  .img {
+    width: 30%;
+    padding: 0px;
+    margin: 0px;
+    /* opacity: 0.9; */
+  }
+  .imageOne {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  .textOne {
+    color: #586774;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+  .textTwo {
+    color: #2c3e50;
+    font-size: 13.6px;
+    padding-bottom: 10px;
+  }
+
+.containerOne {
+    width: 640px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto
+  }
+.cardContainer {
+    transition: transform 0.6s ease-in-out;
+
+  }
+  
+  .cardContainer:hover {
+    transform: scale(1.05);
+  }
+  .footerSection{
+    text-align: center;
+    color: #718096;
+    padding-top: 5px;
+    font-size: 14px;
+    width: 800px;
+    background-color: #f4f7f8;
+    padding: 30px 70px 20px 70px;
+    border-radius: 10px;
+  }
+
+  .gedoCard{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    text-align: center;
+    transition: transform 0.6s ease-in-out;
+  }
+  .gedoCard:hover {
+    transform: scale(1.04) translateY(-2px);
+    box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.2);
+  }
+  .socialImage {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.7s ease-in-out;
+  }
+  
+  .socialImage:hover {
+    opacity: 0.7;
+    transform: scale(1.1) rotate(360deg);
+  }
+  
+  .textThree{
+    padding-bottom: 15px;
+  }
+  @media (max-width: 899px) {
+    .containerOne {
+      width: 500px;
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+    .imageOne {
+      width: 160px;
+      height: 160px;
+      /* border-radius: 10px; */
+    }
+  
+  }
+  
+
+  @media (max-width: 768px) {
+   .imgOne{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+        /* text-align: center; */
+        padding-top: 10px;
+    }
+    .gedoCard img{
+        width: 100px !important;
+        height: 30px !important;
+    }
+    .footerSection {
+        width: 500px !important;
+        padding: 10px 30px 10px 30px;
+    }
+  }
+  @media (max-width: 599px) {
+    .containerOne {
+        width: 350px;
+      }
+      .content{
+        width: 550%;
+        padding-right: 10px !important;
+        padding-left: 2px !important;
+        /* text-align: center; */
+        /* padding-top: 5px !important; */
+    }
+    .gedoCard{
+        width: 100% !important;
+    }
+    .footerSection {
+        width: 350px !important;
+    }
+    .img {
+      width: 40%;
+      padding: 0px;
+      margin: 0px;
+      /* opacity: 0.9; */
+    }
+    .imageOne {
+      width: 140px;
+    }
+    .textOne{
+      font-size: 15px !important;
+      padding-right: 0px !important;
+
+    }
+    .textTwo{
+      font-size: 12px !important;
+      padding-right: 0px !important;
+    
+    }
+  }
